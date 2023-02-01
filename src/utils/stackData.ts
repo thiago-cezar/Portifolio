@@ -4,6 +4,7 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
+  FaSass,
 } from "react-icons/fa";
 import {
   SiDjango,
@@ -22,6 +23,8 @@ export const stackData = [
   { title: "TypeScript", img: SiTypescript },
   { title: "Python", img: FaPython },
   { title: "Django", img: SiDjango },
+  { title: "Sass", img: FaSass },
+
   // { title: "Docker", img: FaDocker },
   // { title: "Vuejs", img: FaVuejs },
 ];
