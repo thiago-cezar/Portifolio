@@ -1,11 +1,11 @@
 // Styles
+import { Button } from "@/styles/Buttons";
 import { Container } from "@/styles/Global";
 import { Text } from "@/styles/Text";
-import { Button } from "@/styles/Buttons";
 
 // Components
-import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
+import { Stack } from "@/components/Stack";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -14,16 +14,15 @@ import { userData } from "@/utils/userData";
 // Page Style
 import {
   Header,
-  HeaderContent,
   HeaderButtonsArea,
-  StackSection,
-  StackCards,
-  ProjectsArea,
-  ProjectsAreaSocialMediaMessage,
-  ProjectsAreaContent,
+  HeaderContent,
   ProjectAreaWrapperColumns,
+  ProjectsArea,
+  ProjectsAreaContent,
+  ProjectsAreaSocialMediaMessage,
+  StackCards,
+  StackSection,
 } from "./style";
-
 
 export const Home = (): JSX.Element => {
   return (
@@ -32,12 +31,20 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              Transformando ideias em realidade com tecnologia.
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              <p>
+                Sou um Desenvolvedor graduado pela Kenzie Academy Brasil com
+                experiência em projetos usando metodologias como Scrum.
+              </p>
+              <p>
+                Desde cedo, sempre tive uma paixão por tecnologia e a
+                programação intensificou ainda mais essa paixão. Eu sinto uma
+                constante necessidade de aprender e evoluir nesta área, o que
+                torna a programação uma fonte constante de desafios e satisfação
+                para mim.
+              </p>
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
