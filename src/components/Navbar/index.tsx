@@ -1,20 +1,21 @@
+import { userData } from "@/utils/userData";
 import { useState } from "react";
 import useMedia from "use-media";
-import { userData } from "@/utils/userData";
 
 import {
-  Navbar as NavbarWrapper,
   LogoTipo,
   LogoTipoImage,
   LogoTipoText,
+  Navbar as NavbarWrapper,
   NavbarLinks,
   NavbarMobileArea,
 } from "./style";
 
-import { FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container } from "@/styles/Global";
+import { FaBars, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import { MdContactPage } from "react-icons/md";
 
 export interface MenuButtonOpen {
   open: Boolean;
@@ -97,6 +98,18 @@ export const NavLinks = (): JSX.Element => {
           href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
         >
           <FaLinkedinIn />
+        </Button>
+      )}
+
+      {userData.curriculum && (
+        <Button
+          type="icon"
+          target="_blank"
+          as="a"
+          aria-label="Currículo"
+          href={`${userData.curriculum}`}
+        >
+          <MdContactPage />
         </Button>
       )}
     </NavbarLinks>
