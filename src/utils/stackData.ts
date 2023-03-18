@@ -1,5 +1,8 @@
 import {
   FaCss3Alt,
+  FaDocker,
+  FaGit,
+  FaGithub,
   FaHtml5,
   FaNodeJs,
   FaPython,
@@ -9,6 +12,7 @@ import {
 import {
   SiDjango,
   SiJavascript,
+  SiPostgresql,
   SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
@@ -24,6 +28,8 @@ export const stackData = [
   { title: "Python", img: FaPython },
   { title: "Django", img: SiDjango },
   { title: "Sass", img: FaSass },
-  // { title: "Docker", img: FaDocker },
-  // { title: "Vuejs", img: FaVuejs },
+  { title: "Docker", img: FaDocker },
+  { title: "PostgreSQL ", img: SiPostgresql },
+  { title: "GIT ", img: FaGit },
+  { title: "GitHub ", img: FaGithub },
 ];
