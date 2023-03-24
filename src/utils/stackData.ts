@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaHtml5,
   FaNodeJs,
+  FaPhp,
   FaPython,
   FaReact,
   FaSass,
@@ -32,4 +33,5 @@ export const stackData = [
   { title: "PostgreSQL ", img: SiPostgresql },
   { title: "GIT ", img: FaGit },
   { title: "GitHub ", img: FaGithub },
+  { title: "PHP ", img: FaPhp },
 ];
